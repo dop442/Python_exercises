@@ -1,0 +1,12 @@
+import random
+rand_num = random.randint(1, 10)
+print("请输入1~10之间任意一个数字：")
+while True:
+    user_num = int(input())
+    if rand_num < user_num:
+        print("数字太大！")
+    elif rand_num > user_num:
+        print("数字太小！")
+    else:
+        print("恭喜你猜对了！")
+        break
